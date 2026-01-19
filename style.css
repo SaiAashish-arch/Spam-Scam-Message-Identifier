@@ -1,7 +1,9 @@
 body {
   margin: 0;
   font-family: "Courier New", monospace;
-  background: radial-gradient(circle at top, #0f2027, #000000);
+  background:
+    radial-gradient(circle at top, rgba(0,255,156,0.15), transparent 40%),
+    linear-gradient(180deg, #020202, #000000);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -9,61 +11,62 @@ body {
   color: #00ff9c;
 }
 .card {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.92);
   width: 420px;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 14px;
   text-align: center;
-  box-shadow: 0 0 25px rgba(0, 255, 156, 0.4);
-  border: 1px solid #00ff9c;
+  border: 1px solid rgba(0,255,156,0.6);
+  box-shadow:
+    0 0 20px rgba(0,255,156,0.4),
+    inset 0 0 10px rgba(0,255,156,0.1);
 }
-
 h1 {
-  margin-bottom: 5px;
-  text-shadow: 0 0 10px #00ff9c;
+  margin-bottom: 6px;
+  font-size: 22px;
+  text-shadow: 0 0 10px rgba(0,255,156,0.8);
 }
 .subtitle {
   color: #7dffcb;
-  font-size: 14px;
+  font-size: 13px;
+  margin-bottom: 18px;
 }
 textarea {
   width: 100%;
   height: 120px;
-  margin: 18px 0;
-  padding: 12px;
-  background: black;
+  background: #000;
   color: #00ff9c;
-  border: 1px solid #00ff9c;
+  border: 1px solid rgba(0,255,156,0.6);
+  padding: 12px;
   border-radius: 6px;
-  resize: none;
   outline: none;
+  font-size: 14px;
 }
 textarea::placeholder {
-  color: #4cffb3;
+  color: rgba(0,255,156,0.5);
 }
 button {
-  background: black;
+  margin-top: 16px;
+  background: transparent;
   color: #00ff9c;
   border: 1px solid #00ff9c;
-  padding: 10px 30px;
+  padding: 10px 32px;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 15px;
-  transition: all 0.3s ease;
+  font-size: 14px;
+  transition: all 0.25s ease;
 }
 button:hover {
   background: #00ff9c;
-  color: black;
-  box-shadow: 0 0 15px #00ff9c;
+  color: #000;
+  box-shadow: 0 0 18px rgba(0,255,156,0.9);
 }
 #output {
-  margin-top: 18px;
-  font-size: 16px;
+  margin-top: 16px;
+  font-size: 15px;
 }
 #riskMeter {
-  margin-top: 8px;
-  font-size: 14px;
+  margin-top: 6px;
+  font-size: 13px;
   color: #7dffcb;
-}
-  font-size: 14px;
 }
